@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Gotu&family=Lato:wght@300;400;700;900&family=Quicksand:wght@300;400;500;600&display=swap');
+
+:root  {
+    color: $neutral;
+
+    h1, h2, h3, h4 {
+        font-family: 'Gotu', sans-serif;
+        font-weight: 100;
+        letter-spacing: 0.2rem;
+    }
+
+    p  {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 200;
+    }
+
+    a {
+        font-family: 'Lato', sans-serif;
+    }
+}
