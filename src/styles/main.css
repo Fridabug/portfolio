@@ -6,6 +6,7 @@
   height: 100vh;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .intro {
@@ -31,8 +32,46 @@
   width: 1200px;
   height: 1px;
   position: absolute;
+  transform: rotate(335deg);
+  bottom: 200px;
+  left: 200px;
 }
 
+.animation:hover .angled-line {
+  animation: move 10s;
+}
+
+.line-2 {
+  left: 80px;
+}
+
+.line-3 {
+  left: -40px;
+}
+
+.line-4 {
+  left: -160px;
+}
+
+.line-5 {
+  left: -280px;
+}
+
+.line-6 {
+  left: -400px;
+}
+
+@keyframes move {
+  0% {
+    transform: rotate(335deg) translateX(0px);
+  }
+  50% {
+    transform: rotate(335deg) translateX(-100px);
+  }
+  100% {
+    transform: rotate(335deg) translateX(0px);
+  }
+}
 :root {
   color: #FDF4ED;
 }
