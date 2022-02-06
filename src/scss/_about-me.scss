@@ -1,0 +1,21 @@
+@import "_colours";
+@import "_fonts";
+
+.about-me {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    div {
+        width: 48%;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+
+    .about-me-img {
+        background: url(./images/me.png);
+        background-size: cover;
+    }
+}
+

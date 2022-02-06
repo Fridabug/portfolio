@@ -1,4 +1,7 @@
 @import '_colours';
+* {
+    box-sizing: border-box;
+}
 
 .top {
     display: flex;
@@ -29,7 +32,8 @@
 
 .animation {
     position: relative;
-    width: 640px;
+    width: 50%;
+    max-width: 640px;
     height: 800px;
     right: 0;
     bottom: 0;
@@ -39,29 +43,30 @@
 
 .angled-line {
     background-color: $neutral;
-    width: 300px;
+    width: 1200px;
     height: 1px;
     position: absolute;
     transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0.4504deg) rotateY(9.9982deg) rotateZ(-45deg) skew(0deg, 0deg);
-    left: -300px;
+    transform-style: preserve-3d;
+    left: -220px;
     bottom: 0;
 }
 
-// .line-2 {
-//     right: -240px;
-// }
+.line-2 {
+    left: -100px;
+}
 
-// .line-3 {
-//     right: -120px;
-// }
+.line-3 {
+    left: 20px;
+}
 
-// .line-4 {
-//     right: 0px;
-// }
+.line-4 {
+    left: 140px;
+}
 
-// .line-5 {
-//     right: 120px;
-// }
+.line-5 {
+    left: 260px;
+}
 
 .planet {
     position: absolute;

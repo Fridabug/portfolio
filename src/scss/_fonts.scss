@@ -3,12 +3,18 @@
 :root  {
     color: $neutral;
 
-    h1, h2, h3, h4 {
+    h1, h2 {
         font-family: 'Gotu', sans-serif;
         font-weight: 100;
         letter-spacing: 0.2rem;
     }
 
+    h3 {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 500;
+        font-size: 0.8rem;
+        letter-spacing: 0.1rem;
+    }
     p  {
         font-family: 'Quicksand', sans-serif;
         font-weight: 200;

@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Gotu&family=Lato:wght@300;400;700;900&family=Quicksand:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gotu&family=Lato:wght@300;400;700;900&family=Quicksand:wght@300;400;500;600&display=swap");
+* {
+  box-sizing: border-box;
+}
+
 .top {
   display: flex;
   width: 100vw;
@@ -22,7 +27,8 @@
 
 .animation {
   position: relative;
-  width: 640px;
+  width: 50%;
+  max-width: 640px;
   height: 800px;
   right: 0;
   bottom: 0;
@@ -32,12 +38,29 @@
 
 .angled-line {
   background-color: #FDF4ED;
-  width: 300px;
+  width: 1200px;
   height: 1px;
   position: absolute;
   transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0.4504deg) rotateY(9.9982deg) rotateZ(-45deg) skew(0deg, 0deg);
-  left: -300px;
+  transform-style: preserve-3d;
+  left: -220px;
   bottom: 0;
+}
+
+.line-2 {
+  left: -100px;
+}
+
+.line-3 {
+  left: 20px;
+}
+
+.line-4 {
+  left: 140px;
+}
+
+.line-5 {
+  left: 260px;
 }
 
 .planet {
@@ -101,10 +124,16 @@
 :root {
   color: #FDF4ED;
 }
-:root h1, :root h2, :root h3, :root h4 {
+:root h1, :root h2 {
   font-family: "Gotu", sans-serif;
   font-weight: 100;
   letter-spacing: 0.2rem;
+}
+:root h3 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
 }
 :root p {
   font-family: "Quicksand", sans-serif;
@@ -112,6 +141,45 @@
 }
 :root a {
   font-family: "Lato", sans-serif;
+}
+
+:root {
+  color: #FDF4ED;
+}
+:root h1, :root h2 {
+  font-family: "Gotu", sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.2rem;
+}
+:root h3 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+}
+:root p {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 200;
+}
+:root a {
+  font-family: "Lato", sans-serif;
+}
+
+.about-me {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.about-me div {
+  width: 48%;
+}
+.about-me p {
+  font-size: 1.2rem;
+}
+.about-me .about-me-img {
+  background: url(./images/me.png);
+  background-size: cover;
 }
 
 body {
