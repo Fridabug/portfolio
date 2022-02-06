@@ -28,17 +28,20 @@
 }
 
 .angled-line {
-  background-color: #FDF4ED;
+  border-top: 1px solid #FDF4ED;
   width: 1200px;
   height: 1px;
   position: absolute;
   transform: rotate(335deg);
   bottom: 200px;
   left: 200px;
+  transition: border-radius 3s;
 }
 
 .animation:hover .angled-line {
-  animation: move 10s;
+  animation: bend 10s;
+  border-color: red;
+  border-radius: 30%;
 }
 
 .line-2 {
@@ -61,15 +64,15 @@
   left: -400px;
 }
 
-@keyframes move {
+@keyframes bend {
   0% {
-    transform: rotate(335deg) translateX(0px);
+    border-radius: 0px;
   }
   50% {
-    transform: rotate(335deg) translateX(-100px);
+    border-radius: 50px/25px;
   }
   100% {
-    transform: rotate(335deg) translateX(0px);
+    border-radius: 0px;
   }
 }
 :root {
@@ -90,6 +93,7 @@
 
 body {
   background-color: #061723;
+  width: 100vw;
 }
 
 /*# sourceMappingURL=main.css.map */
