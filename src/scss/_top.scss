@@ -1,4 +1,7 @@
 @import '_colours';
+* {
+    box-sizing: border-box;
+}
 
 .top {
     display: flex;
@@ -22,6 +25,15 @@
           opacity: 1;
       }
   }
+    width: 40%;
+    margin-left: 10%;
+    h1 {
+        opacity: 0.6;
+        span {
+            font-weight: bold;
+            opacity: 1;
+        }
+    }
 }
 
 
@@ -36,51 +48,120 @@
 .angled-line {
   border-top: 1px solid $neutral;
   width: 1200px;
-  height: 1px;
+  height: 200px;
   position: absolute;
-  transform: rotate(335deg);
+  // transform: rotate(335deg);
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0.4504deg) rotateY(9.9982deg) rotateZ(-45deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
   bottom: 200px;
   left: 200px;
-  transition: border-radius 3s;
+  transition: left 5s;
 }
 
-.animation:hover .angled-line {
-  animation: bend 10s;
-  border-color: red;
-  border-radius: 30%;
+.line-1:hover {
+  left: 260px;
 }
+
 
 .line-2 {
   left: 80px;
+}
+.line-2:hover {
+  left: 140px;
 }
 
 .line-3 {
   left: -40px;
 }
 
+.line-3:hover {
+  left: 20px;
+}
+
 .line-4 {
   left: -160px;
+}
+
+.line-4:hover {
+  left: -100px;
 }
 
 .line-5 {
   left: -280px;
 }
 
+.line-5:hover {
+  left: -220px;
+}
+
 .line-6 {
   left: -400px;
 }
 
-@keyframes bend {
-  0% {
-    border-radius: 0px;
-  }
-
-  50% {
-    border-radius: 50px / 25px;
-  }
-
-  100% {
-    border-radius: 0px;
-  }
+.line-6:hover {
+  left: -340px;
 }
 
+
+// Planets
+
+.planet {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid $neutral;
+    background-color: $myNavy;
+}
+
+.planet-large {
+    left: 128px;
+    top: 280px;
+    width: 320px;
+    height: 320px;
+    z-index: 1;
+}
+
+.rotation-medium {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    animation: rotation 26s linear infinite;
+}
+
+.planet-medium {
+    top: 25px;
+    right: 0;
+    z-index: 2;
+    height: 80px;
+    width: 80px;
+    margin: 0 auto;
+}
+
+.rotation-small {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 320px;
+    height: 320px;
+    animation: rotation 14s linear infinite;
+}
+
+.planet-small {
+    left: 65px;
+    top: 0;
+    width: 40px;
+    height: 40px;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
