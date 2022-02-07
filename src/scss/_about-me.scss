@@ -5,10 +5,10 @@
     display: flex;
     flex-wrap: wrap-reverse;
     width: 80%;
-    height: 40vh;
     margin: 0 auto;
     justify-content: space-between;
     div {
+        margin: 2rem 0;
         width: 48%;
         min-width: 300px;
     }
@@ -19,9 +19,12 @@
     .about-me-img {
         background: url(../images/me.png);
         background-size: cover;
-        height: 200px;
-        width: 200px;
-        border-radius: 50%;
+        background-position: center;
+        width: 40%;
+    }
+
+    .about-me-txt {
+      width: 50%;
     }
 }
 

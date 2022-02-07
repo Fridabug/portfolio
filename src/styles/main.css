@@ -16,6 +16,7 @@
 
 .intro {
   width: 45%;
+  min-width: 250px;
   margin-left: 15%;
   width: 40%;
   margin-left: 10%;
@@ -39,26 +40,29 @@
   position: relative;
   width: 640px;
   height: 800px;
+  perspective: 1000px;
+  flex-shrink: 1;
 }
 
 .angled-line {
-  border-top: 1px solid #FDF4ED;
+  background-color: #FDF4ED;
   width: 1200px;
-  height: 200px;
+  height: 1px;
   position: absolute;
+  will-change: transform;
   transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0.4504deg) rotateY(9.9982deg) rotateZ(-45deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
-  bottom: 200px;
-  left: 200px;
-  transition: left 5s;
+  bottom: 0px;
+  left: -220px;
+  transform-origin: 0% 50%;
 }
 
 .line-1:hover {
-  left: 260px;
+  transform: perspective(500px) translate3d(10px, 0, 100px) scale3d(1, 1, 1) rotateX(0.4504deg) rotateY(9.9982deg) rotateZ(-45deg) skew(0deg, 0deg);
 }
 
 .line-2 {
-  left: 80px;
+  left: -100px;
 }
 
 .line-2:hover {
@@ -66,7 +70,7 @@
 }
 
 .line-3 {
-  left: -40px;
+  left: 20px;
 }
 
 .line-3:hover {
@@ -74,7 +78,7 @@
 }
 
 .line-4 {
-  left: -160px;
+  left: 140px;
 }
 
 .line-4:hover {
@@ -82,7 +86,7 @@
 }
 
 .line-5 {
-  left: -280px;
+  left: 260px;
 }
 
 .line-5:hover {
@@ -90,7 +94,7 @@
 }
 
 .line-6 {
-  left: -400px;
+  left: 380px;
 }
 
 .line-6:hover {
@@ -176,6 +180,9 @@
 :root a {
   font-family: "Lato", sans-serif;
 }
+:root table {
+  font-family: "Quicksand", sans-serif;
+}
 
 :root {
   color: #FDF4ED;
@@ -198,16 +205,19 @@
 :root a {
   font-family: "Lato", sans-serif;
 }
+:root table {
+  font-family: "Quicksand", sans-serif;
+}
 
 .about-me {
   display: flex;
   flex-wrap: wrap-reverse;
   width: 80%;
-  height: 40vh;
   margin: 0 auto;
   justify-content: space-between;
 }
 .about-me div {
+  margin: 2rem 0;
   width: 48%;
   min-width: 300px;
 }
@@ -217,9 +227,16 @@
 .about-me .about-me-img {
   background: url(../images/me.png);
   background-size: cover;
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
+  background-position: center;
+  width: 40%;
+}
+.about-me .about-me-txt {
+  width: 50%;
+}
+
+.skills {
+  margin: 2rem auto;
+  width: 80%;
 }
 
 body {
