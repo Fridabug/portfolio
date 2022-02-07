@@ -5,7 +5,7 @@
 
 .top {
     display: flex;
-    width: 100vw;
+    width: 100%;
     max-width: 1600px;
     height: 100vh;
     justify-content: center;
@@ -144,8 +144,8 @@
 }
 
 
-@media screen and (min-height: 900px) {
-  .top {
-    flex-direction: column;
-  }
-}
+// @media screen and (min-height: 900px) {
+//   .top {
+//     flex-direction: column;
+//   }
+// }

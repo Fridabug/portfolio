@@ -1,5 +1,32 @@
 .projects {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
+
+    h3 {
+        margin: 3rem 0;
+    }
+
+    .project {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+
+        .project-img {
+            width: 40%;
+            img {
+                width: 100%;
+            }
+            
+        }
+        .project-txt {
+            width: 45%;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
 }
+

@@ -1,6 +1,6 @@
 nav {
-    margin: 1rem ;
-    position: relative;
+    margin: 2rem ;
+    position: absolute;
 
     ul {
         padding: 1rem 2rem;
@@ -19,7 +19,7 @@ nav {
 
 .nav-trigger {
     font-size: 2rem;
-    opacity: 0.6;
+    opacity: 1;
 
     &:hover {
         color: $myRed;

@@ -6,7 +6,7 @@
 
 .top {
   display: flex;
-  width: 100vw;
+  width: 100%;
   max-width: 1600px;
   height: 100vh;
   justify-content: center;
@@ -131,11 +131,6 @@
     transform: rotate(360deg);
   }
 }
-@media screen and (min-height: 900px) {
-  .top {
-    flex-direction: column;
-  }
-}
 :root {
   color: #FDF4ED;
 }
@@ -206,7 +201,7 @@
   justify-content: space-between;
 }
 .about-me div {
-  margin: 2rem 0;
+  margin: 4rem 0;
   width: 48%;
   min-width: 300px;
 }
@@ -222,11 +217,17 @@
 .about-me .about-me-txt {
   width: 50%;
 }
+.about-me .about-me-txt h3 {
+  margin-bottom: 2rem;
+}
 
 .skills {
   margin: 2rem auto;
   width: 80%;
   text-align: center;
+}
+.skills h3 {
+  margin: 2rem 0;
 }
 .skills table {
   width: 60%;
@@ -260,8 +261,8 @@ footer p i {
 }
 
 nav {
-  margin: 1rem;
-  position: relative;
+  margin: 2rem;
+  position: absolute;
 }
 nav ul {
   padding: 1rem 2rem;
@@ -278,7 +279,7 @@ nav ul li {
 
 .nav-trigger {
   font-size: 2rem;
-  opacity: 0.6;
+  opacity: 1;
 }
 .nav-trigger:hover {
   color: #984447;
@@ -310,9 +311,31 @@ nav ul li {
 }
 
 .projects {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   text-align: center;
+}
+.projects h3 {
+  margin: 3rem 0;
+}
+.projects .project {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+.projects .project .project-img {
+  width: 40%;
+}
+.projects .project .project-img img {
+  width: 100%;
+}
+.projects .project .project-txt {
+  width: 45%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 * {
@@ -327,7 +350,7 @@ nav ul li {
 
 body {
   background-color: #061723;
-  width: 100vw;
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
