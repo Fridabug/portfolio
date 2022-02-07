@@ -14,7 +14,9 @@
       font-weight: 500;
       font-size: 0.8rem;
       letter-spacing: 0.1rem;
+      text-transform: uppercase;
     }
+
     p  {
       font-family: 'Quicksand', sans-serif;
       font-weight: 200;
@@ -22,9 +24,15 @@
 
     a {
       font-family: 'Lato', sans-serif;
+      color: $myGreen;
+    }
+
+    a:hover {
+      opacity: 0.6;
     }
 
     table {
       font-family: 'Quicksand', sans-serif;
+      font-weight: 200;
     }
 }

@@ -4,6 +4,20 @@
 @import '_fonts';
 @import '_about-me';
 @import '_skills';
+@import '_footer';
+@import '_nav';
+@import '_up';
+@import '_projects';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    ul {
+        list-style: none;
+    }
+}
 
 body {
     background-color: $myNavy;

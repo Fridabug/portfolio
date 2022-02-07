@@ -1,0 +1,23 @@
+.up {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    transition: transform 1s;
+
+    a {
+        font-size: 2rem;
+    }
+
+    &:hover, &:hover a {
+        color: $myRed;
+        opacity: 1;
+        transform: scale(1.2);
+        
+    }
+}

@@ -7,9 +7,30 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Friederike Spring</title>
   <link rel="stylesheet" href="styles/main.css" />
+  <script src="https://kit.fontawesome.com/bc614fcfbf.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+  <!-- navbar -->
+  <nav>
+      <i class="fas fa-compass nav-trigger">    
+        <ul>
+        <li class="nav-item">
+          <a href="#about-me">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a href="#skills">Skill Set</a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </i>
+  </nav>
+
   <section class="top">
     <!-- Intro -->
     <div class="intro">
@@ -17,6 +38,7 @@
       <h1>I'm a Full Stack Developer building digital solutions.</h1>
       <p>let's work on an project together.</p>
     </div>
+
     <!-- Planets -->
     <div class="animation">
       <div class="planet-large planet">
@@ -39,7 +61,7 @@
   </section>
 
   <!-- about me -->
-  <section class="about-me">
+  <section class="about-me" id="about-me">
     <div class="about-me-img">
       <!-- <img src="./images/me.png" alt=""> -->
     </div>
@@ -55,22 +77,71 @@
     </div>
   </section>
 
-  <section class="skills">
+  <section class="skills" id="skills">
     <h3>SKILL SET</h3>
     <table>
       <tr>
-        <th>Coding Languages</th>
+        <td>
+          <i class="fas fa-star"></i>
+        </td>
+        <td>
+          <i class="fas fa-star"></i>
+        </td>
+        <td>
+          <i class="fas fa-star"></i>
+        </td>
+        <td>
+          <i class="fas fa-star"></i>
+        </td>
+        <td>
+          <i class="fas fa-star"></i>
+        </td>
       </tr>
-      <tr></tr>
+      <tr>
+        <td>HTML & CSS</td>
+        <td>JavaScript</td>
+        <td>Ruby On Rails</td>
+        <td>SQL</td>
+        <td>Bootstrap</td>
+      </tr>
     </table>
   </section>
 
   <!-- projects -->
-  <section class="projects">
+  <section class="projects" id="projects">
+    <h3>Projects</h3>
     <div class="project"></div>
     <div class="project"></div>
     <div class="project"></div>
   </section>
+
+  <!-- footer -->
+  <footer id="contact">
+    <h3>MY CONTACTS</h3> 
+    <ul>
+      <li class="nav-item">
+        <a href="#"><i class="far fa-envelope"></i></a>
+      </li>
+      <li class="nav-item">
+        <a href="#"><i class="fab fa-github"></i></a>
+      </li>
+      <li class="nav-item">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </li>
+    </ul>
+
+    <p>made on <i class="fas fa-globe-africa"></i> in 2022</p>
+  </footer>
+
+  <!-- up! -->
+
+  <div class="up" id="up"> 
+    <a href="#top">
+      <!-- <i class="far fa-sun"></i> -->
+      <i class="fas fa-arrow-circle-up"></i>
+    </a>
+  </div>
+
 
   <!-- Custom scripts, edit above this line -->
   <script src="scripts/index.js"></script>

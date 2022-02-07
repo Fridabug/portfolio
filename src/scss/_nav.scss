@@ -1,0 +1,31 @@
+nav {
+    margin: 1rem ;
+    position: relative;
+
+    ul {
+        padding: 1rem 2rem;
+        display: none;
+        position: absolute;
+        top: 15px;
+        left: -30px;
+        width: 200px;
+
+        li {
+            font-size: 1rem;
+            padding-top: 0.5rem;
+        }
+    }
+}
+
+.nav-trigger {
+    font-size: 2rem;
+    opacity: 0.6;
+
+    &:hover {
+        color: $myRed;
+    }
+}
+
+.nav-trigger:hover ul, .nav-trigger ul:hover {
+    display: block;
+}

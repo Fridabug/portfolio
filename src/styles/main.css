@@ -18,15 +18,6 @@
   width: 45%;
   min-width: 250px;
   margin-left: 15%;
-  width: 40%;
-  margin-left: 10%;
-}
-.intro h1 {
-  opacity: 0.6;
-}
-.intro h1 span {
-  font-weight: bold;
-  opacity: 1;
 }
 .intro h1 {
   opacity: 0.6;
@@ -54,26 +45,19 @@
   transform-style: preserve-3d;
   bottom: 0px;
   left: -220px;
+  transition: transform 1s;
   transform-origin: 0% 50%;
 }
 
-.line-1:hover {
-  transform: perspective(500px) translate3d(10px, 0, 100px) scale3d(1, 1, 1) rotateX(0.4504deg) rotateY(9.9982deg) rotateZ(-45deg) skew(0deg, 0deg);
+.animation:hover .angled-line {
+  transform: perspective(500px) translate3d(10px, 0, 100px) scale3d(1, 1, 1) rotateX(0.4504deg) rotateY(9.9982deg) rotateZ(-40deg) skew(0deg, 0deg);
 }
 
 .line-2 {
   left: -100px;
 }
 
-.line-2:hover {
-  left: 140px;
-}
-
 .line-3 {
-  left: 20px;
-}
-
-.line-3:hover {
   left: 20px;
 }
 
@@ -81,24 +65,12 @@
   left: 140px;
 }
 
-.line-4:hover {
-  left: -100px;
-}
-
 .line-5 {
   left: 260px;
 }
 
-.line-5:hover {
-  left: -220px;
-}
-
 .line-6 {
   left: 380px;
-}
-
-.line-6:hover {
-  left: -340px;
 }
 
 .planet {
@@ -159,6 +131,11 @@
     transform: rotate(360deg);
   }
 }
+@media screen and (min-height: 900px) {
+  .top {
+    flex-direction: column;
+  }
+}
 :root {
   color: #FDF4ED;
 }
@@ -172,6 +149,7 @@
   font-weight: 500;
   font-size: 0.8rem;
   letter-spacing: 0.1rem;
+  text-transform: uppercase;
 }
 :root p {
   font-family: "Quicksand", sans-serif;
@@ -179,9 +157,14 @@
 }
 :root a {
   font-family: "Lato", sans-serif;
+  color: #81B29A;
+}
+:root a:hover {
+  opacity: 0.6;
 }
 :root table {
   font-family: "Quicksand", sans-serif;
+  font-weight: 200;
 }
 
 :root {
@@ -197,6 +180,7 @@
   font-weight: 500;
   font-size: 0.8rem;
   letter-spacing: 0.1rem;
+  text-transform: uppercase;
 }
 :root p {
   font-family: "Quicksand", sans-serif;
@@ -204,9 +188,14 @@
 }
 :root a {
   font-family: "Lato", sans-serif;
+  color: #81B29A;
+}
+:root a:hover {
+  opacity: 0.6;
 }
 :root table {
   font-family: "Quicksand", sans-serif;
+  font-weight: 200;
 }
 
 .about-me {
@@ -237,6 +226,103 @@
 .skills {
   margin: 2rem auto;
   width: 80%;
+  text-align: center;
+}
+.skills table {
+  width: 60%;
+  margin: 0 auto;
+}
+.skills table td {
+  width: 20%;
+  padding: 1rem;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0;
+}
+footer ul {
+  width: 50%;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+footer ul a {
+  font-size: 1.5rem;
+}
+footer p {
+  margin-top: 2rem;
+}
+footer p i {
+  opacity: 0.6;
+}
+
+nav {
+  margin: 1rem;
+  position: relative;
+}
+nav ul {
+  padding: 1rem 2rem;
+  display: none;
+  position: absolute;
+  top: 15px;
+  left: -30px;
+  width: 200px;
+}
+nav ul li {
+  font-size: 1rem;
+  padding-top: 0.5rem;
+}
+
+.nav-trigger {
+  font-size: 2rem;
+  opacity: 0.6;
+}
+.nav-trigger:hover {
+  color: #984447;
+}
+
+.nav-trigger:hover ul, .nav-trigger ul:hover {
+  display: block;
+}
+
+.up {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  transition: transform 1s;
+}
+.up a {
+  font-size: 2rem;
+}
+.up:hover, .up:hover a {
+  color: #984447;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.projects {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+* ul {
+  list-style: none;
 }
 
 body {
